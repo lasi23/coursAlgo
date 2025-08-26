@@ -498,7 +498,7 @@ for(let i = 0; i < 3; i++){
 */
 
 
-
+/*
 //ex C8
 
 //Paramètre
@@ -515,3 +515,36 @@ for(let i = 0; i < 8; i++){
     }
     left(180-15)
 }
+*/
+
+
+
+
+
+// ------------------------  SERIE D  ---------------------------
+
+
+
+//ex d1
+
+//Paramùètre
+setPos(100,200);
+setLineWidth(5);
+changeColor(color.red);
+faceRight();
+
+// variable
+let length;
+let deg;
+length = 100;
+deg = 180-135;
+
+//dessin
+for(let i = 0; i < 8; i++){
+forward(length);
+right(deg);
+}
+
+
+
+
