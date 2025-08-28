@@ -128,6 +128,30 @@ forward(100);
 */
 
 
+//ex 08
+/*
+//paramètre
+setPos(150,300);
+setLineWidth(5);
+changeColor(color.fuchsia);
+faceUp();
+
+//dessin
+forward(50);
+right(90);
+forward(100);
+right(90);
+forward(200);
+right(90);
+forward(50);
+up();
+forward(50);
+right(90);
+forward(50);
+down();
+forward(50)
+*/
+
 
 /*
 //ex 09
@@ -165,6 +189,59 @@ changeColor(color.green);
 arcLeft(100,180);
 changeColor(color.yellow);
 arcLeft(200,180);
+*/
+
+
+
+//ex 11
+/*
+//paremetre
+setPos(100,200);
+faceUp();
+changeColor(color.blue);
+setLineWidth(5);
+
+//dessin
+arcRight(50,180);
+faceRight();
+up();
+forward(50);
+down();
+faceUp();
+arcRight(50,180);
+up();
+forward(50);
+right(90);
+forward(25);
+faceDown();
+changeColor(color.fuchsia);
+down()
+arcRight(100,180)
+*/
+
+
+//ex 12
+
+/*
+//parametre
+setPos(20,250);
+faceUp();
+setLineWidth(5);
+changeColor(color.green);
+
+//dessin
+arcRight(25,180)
+forward(50);
+arcLeft(25,180);
+right(90);
+up();
+forward(25);
+right(90);
+changeColor(color.red);
+down();
+arcLeft(25,180);
+forward(50);
+arcRight(25,180);
 */
 
 
@@ -526,24 +603,25 @@ for(let i = 0; i < 8; i++){
 
 
 //ex d1
-
-//Paramùètre
+/* 
+Paramùètre
 setPos(100,200);
 setLineWidth(5);
 changeColor(color.red);
 faceRight();
 
-// variable
+variable
 let length;
 let deg;
 length = 100;
 deg = 180-135;
 
-//dessin
+dessin
 for(let i = 0; i < 8; i++){
 forward(length);
 right(deg);
 }
+*/
 
 
 
