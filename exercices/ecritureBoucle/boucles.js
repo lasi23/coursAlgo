@@ -16,7 +16,7 @@ for(let i = 0 ; i < 50 ; i++) {
 // A
 // B
 console.log("Exercice 2");
-for(let i = 0; i < 5 ; i ++){
+for(let i = 0; i < 10 ; i ++){
     console.log("A");
     console.log("B");
 }
@@ -42,13 +42,23 @@ for(let i = 0; i < 5 ; i ++){
 // A
 // B
 console.log("Exercice 3");
+// for(let i = 0; i < 3; i++){
+//     for(let j = 0; j < 5; j++){
+//         console.log("A");
+//     }
+//     for(let j = 0; j < 1; j++){
+//         console.log("B");
+//     }
+// }
+
+//--------------REPONSE PLUS COURTE(PA BESOIN DE FAIRE UNE SEULE BOUCLE)
+
 for(let i = 0; i < 3; i++){
     for(let j = 0; j < 5; j++){
         console.log("A");
     }
-    for(let j = 0; j < 1; j++){
-        console.log("B");
-    }
+    console.log("B");
+    
 }
 // TODO
 
@@ -67,6 +77,11 @@ console.log("Exercice 4");
 for(let i = 0; i <= 9; i++){
     console.log(i);
 }
+// count = 0;
+// for(let i = 0; i <= 9; i++){
+//     console.log(count);
+//     count+1
+// }
 
 
 // TODO
@@ -100,7 +115,9 @@ for(let i = 3; i <= 12; i++){
 // 0
 // 1
 console.log("Exercice 6");
-for(let i = 0; i < )
+for(let i =0; i<10; i++){
+    console.log(i%4);
+}
 // TODO
 
 // Exercice 7 : écrire dans la console :
@@ -115,6 +132,16 @@ for(let i = 0; i < )
 // 8
 // 9
 console.log("Exercice 7");
+for(let i = 0; i <= 4; i++){
+    console.log(i%5);
+}
+for(let i = 0; i <= 3; i++){
+    console.log("A");
+}
+for(let i = 7; i < 10; i++){
+    console.log(i+1)
+}
+
 // TODO
 
 // Exercice 8 : écrire dans la console :
@@ -129,7 +156,17 @@ console.log("Exercice 7");
 // 8
 // 109
 console.log("Exercice 8");
-// TODO
+for(let i = 0; i < 10; i++){
+    if(i%3==0){
+        console.log(i+100)
+    }
+    else{
+        console.log(i)
+    }
+}
+
+
+//TODO
 
 // Exercice 9 : écrire dans la console :
 // 0
@@ -143,6 +180,16 @@ console.log("Exercice 8");
 // 208
 // 9
 console.log("Exercice 9");
+for(let i = 0; i < 10; i++){
+    if(i%3 == 0){
+            console.log(i);
+    }   else if (i%3 == 1) {
+            console.log(i+100);
+    }
+        else{
+            console.log(i+200);
+    }
+}
 // TODO
 
 // Exercice 10 : écrire dans la console tous les résultats possibles de lancers de deux dés :
