@@ -1,7 +1,7 @@
 // Exercice 1 : écrire 50 fois "Bonjour" dans la console.
-console.log("Exercice 1");
-for(let i = 0 ; i < 50 ; i++) {
-    console.log("Bonjour");
+console.log("Exercice 1")
+for(let i = 0; i < 50; i++){
+    console.log("Bonjour")
 }
 
 // Exercice 2 : écrire dans la console :
@@ -16,7 +16,7 @@ for(let i = 0 ; i < 50 ; i++) {
 // A
 // B
 console.log("Exercice 2");
-for(let i = 0; i < 10 ; i ++){
+for(let i = 0; i < 5; i++){
     console.log("A");
     console.log("B");
 }
@@ -115,7 +115,7 @@ for(let i = 3; i <= 12; i++){
 // 0
 // 1
 console.log("Exercice 6");
-for(let i =0; i<10; i++){
+for(let i = 0; i < 10; i++){
     console.log(i%4);
 }
 // TODO
@@ -200,11 +200,22 @@ for(let i = 0; i < 10; i++){
 // 6 4
 // 6 5
 // 6 6
-console.log("Exercice 10");
+console.log("Exercice 10 ");
+for(let i = 1; i <= 6; i ++){
+    for(let j = 1; j <= 6; j++){
+        console.log(i, j)
+    }
+}
 // TODO
 
 // Exercice 11 : adapter l'exercice précédent pour enlever les doublons (on ne veut pas afficher 1 2 et 2 1, mais seulement l'un des deux).
 console.log("Exercice 11");
+for(let i = 1; i <= 6; i ++){
+    for(let j = i; j <= 6; j++){
+        console.log(i, j)
+    }
+}
+
 // TODO
 
 // Exercice 12 : en prenant des dés à 20 faces, combien de résultats différents (sans doublon) peut-on afficher ? (Autrement dit : adapter le code précédent pour compter les résultats au lieu de les afficher)
