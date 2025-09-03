@@ -38,7 +38,6 @@ console.log(tab2);
 for(let i=0; i < tab2.length; i++){
     tab1.push(tab2[i]);
 }
-
 console.log(tab1);
 
 // 8) Afficher *un par un* tous les éléments du tableau tab1.
@@ -58,13 +57,15 @@ console.log(tab1.length);
 
 // 11) Ajouter le nombre 66 à la fin du tableau tab1.
 tab1.push(66);
+console.log(tab1);
 
 
 
 // 12) Diviser par 2 toutes les variables contenues dans le tableau tab1.
-for(let i=0; i<12; i++){
+for(let i=0; i< tab1.length; i++){
     tab1[i] = tab1[i]/2;
 }
+console.log(tab1);
 
 // 13) Pour vérifier si vous êtes correctement arrivé(e) jusqu'ici, essayez les deux lignes de code suivantes :
 console.log(tab1.reduce((acc,cur)=> acc+String.fromCharCode(cur),""));
