@@ -33,8 +33,7 @@ let pointForce;
 function displayInfo(player) {
     const pointPV = player[HP] > 0 ? "points" : "point";
     const pointMana = player[mana] > 0 ? "points" : "point";
-    const pointForce = player[force] > 0 ? "points" : "point";
-    
+    const pointForce = player[force] > 0 ? "points" : "point";    
     return console.log(player[0],"a, ", player[HP], pointPV, "de pv, ",player[mana], pointMana, " de mana, ", player[force], pointForce, " de force.");
 }                                 
 
@@ -62,21 +61,55 @@ console.log(displayInfo(secondPlayer));
 
 
 
+
+
+
 // https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2021/11/12201506/clean_259.jpg
 // 8) Le deuxième personnage a perdu 3 de vie. Décrémenter la variable correspondante.
+
+secondPlayer[HP] -= 3;
+
+
+
+
 
 // 9) Vérifier que
 displayInfo(secondPlayer);
 // affiche bien : "Spiderman a 117 points de vie, 0 point de mana, et 50 de force."
 
+
+
+
+
+
 // 10) Écrire une fonction directHit qui reçoit deux personnages en entrée et qui fait perdre des points de vie au second. Le nombre de points de vie perdus sera égal à la force du premier personnage.
 function directHit(player1, player2) {
-	
+    player1[HP] -= player2[force];	
 }
 
+directHit2(firstPlayer,secondPlayer);
+
+
+
+console.log("**************************************************************************************");
+
 // 11) Utiliser la fonction précédente pour que le second personnage tape le premier personnage.
+function directHit2(player1, player2) {
+    player1[HP] -= player2[force];	
+}
+
+directHit2(secondPlayer, firstPlayer);
+
+console.log(secondPlayer);
 
 // 12) Le second personnage boit une potion de soin ! Ajouter 3 points de vie à Spiderman.
+
+secondPlayer[HP] += 3;
+
+console.log(secondPlayer[HP]);
+
+
+
 
 // 13) Le premier personnage va boire plusieurs potions.
 let randomNumber = Math.floor(Math.random()*8)+2;
@@ -84,8 +117,22 @@ console.log("Nico Minoru s'apprête à boire",randomNumber,"potions de vie !");
 // TODO
 displayInfo(firstPlayer);
 
+
+
+
+
 // 14) Écrire une fonction qui reçoit deux personnages A et B en entrée et qui fait lancer un sort à A pour attaquer B
 // Cette fonction doit :
 // - vérifier que le personnage a au moins 10 points de mana ; si ce n'est pas le cas, la fonction est terminée
 // - faire perdre 10 points de mana à A
 // - faire perdre 25 points de vie à B
+
+function endoloris(A,B){
+    if(A[mana] >= 10){
+        A[mana] -= 10;
+        B[HP] -= 10;
+    }
+    return console.log(A,B);
+}
+
+endoloris(firstPlayer, secondPlayer);
